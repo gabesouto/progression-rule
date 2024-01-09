@@ -16,6 +16,8 @@ public class App {
     System.out.println("Digite a quantidade de atividades para cadastrar: ");
     int activities = Integer.parseInt(sc.nextLine());
 
+    int sum = 0;
+
     for (int i = 1; i <= activities; i++) {
       System.out.println("Digite o nome da atividade " + i + ":");
 
@@ -26,7 +28,13 @@ public class App {
       System.out.println(
           "Digite a nota obtida para " + activityName + ":");
 
-      int grades = Integer.parseInt(sc.nextLine());
+      int gradeOfActivity = Integer.parseInt(sc.nextLine());
+
+      int checkSum = sum += Integer.parseInt(valueActivity);
+
+      if (checkSum != 100) {
+        System.out.println("A soma dos pesos é diferente de 100!");
+      }
 
 
     }
