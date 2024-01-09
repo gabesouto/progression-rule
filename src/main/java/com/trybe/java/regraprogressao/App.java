@@ -23,6 +23,10 @@ public class App {
       System.out.println("Digite o peso da atividade " + i + ":");
 
       String valueActivity = sc.nextLine();
+      System.out.println(
+          "Digite a nota obtida para " + activityName + ":");
+
+      int grades = Integer.parseInt(sc.nextLine());
 
 
     }
